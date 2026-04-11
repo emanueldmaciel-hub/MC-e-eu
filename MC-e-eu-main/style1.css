@@ -1,0 +1,151 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+body {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    min-height: 100vh;
+
+}
+
+/* container do vídeo */
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* vídeos */
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* desktop aparece por padrão */
+.video-desktop {
+  display: block;
+}
+
+/* mobile escondido */
+.video-mobile {
+  display: none;
+}
+
+/* 📱 quando for celular */
+@media (max-width: 768px) {
+  .video-desktop {
+    display: none;
+  }
+
+  .video-mobile {
+    display: block;
+  }
+}
+
+body::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+/* Menu centralizado */
+.menu { 
+    height: 100vh; /* ocupa a tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* para alinhar h1 e botão verticalmente */
+    color: #ffffff; /* cor do texto */
+}
+
+/* Container para organizar o texto e botão */
+.container {
+    text-align: center;
+}
+
+
+h1 {
+    text-shadow:
+        0 0 5px #001845,
+        0 0 10px #001845,
+        0 0 20px #001845,
+        0 0 40px #001845,
+        0 0 60px #001845;
+}
+
+/* Botão estilizado */
+button {
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.5s;
+}
+
+button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #5e7cff 17.8%, #2a0530 100.2%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+button:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle farthest-corner at 10% 20%, #044881 17.8%, rgba(99, 115, 255, 0.704) 100.2%);
+    transition: 0.5s;
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-desktop {
+  display: block;
+}
+
+.video-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .video-desktop {
+    display: none;
+  }
+
+  .video-mobile {
+    display: block;
+  }
+}

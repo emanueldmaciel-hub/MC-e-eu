@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game - One Piece</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+        <source src="assets/v1.mp4" type="video/mp4">
+    </video>
+<header>
+  <h1>Jogo da Memória</h1>
+  <img src="assets/00.svg" alt="Memory Game One Piece" class="logo">
+</header>
+
+<main>
+  <section class="painel">
+    <p>Tempo: <span>00:00</span></p>
+    <p>Jogadas: <span>0</span></p>
+    <button>Reiniciar</button>
+  </section>
+
+  <section class="tabuleiro">
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+    <div class="carta"><div class="frente"></div><div class="verso"></div></div>
+  </section>
+</main>
+
+<footer>
+  <p>Tripulação do Emanuel ☠️</p>
+</footer>
+
+<div id="vitoria" class="vitoria hidden">
+  <div class="vitoria-box">
+    <h2>🏴‍☠️ Você virou o Rei dos Piratas!</h2>
+    <p>Tempo: <span id="tempo-final"></span></p>
+    <p>Jogadas: <span id="jogadas-final"></span></p>
+    <button onclick="location.reload()">Jogar Novamente</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
