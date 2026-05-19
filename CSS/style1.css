@@ -1,4 +1,4 @@
-/* Fonte */
+
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
 body {
@@ -10,7 +10,7 @@ body {
 
 }
 
-/* container do vídeo */
+
 .video-bg {
   position: fixed;
   top: 0;
@@ -21,24 +21,21 @@ body {
   overflow: hidden;
 }
 
-/* vídeos */
+
 .video-bg video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* desktop aparece por padrão */
 .video-desktop {
   display: block;
 }
 
-/* mobile escondido */
 .video-mobile {
   display: none;
 }
 
-/* 📱 quando for celular */
 @media (max-width: 768px) {
   .video-desktop {
     display: none;
@@ -60,17 +57,17 @@ body::after{
     z-index: -1;
 }
 
-/* Menu centralizado */
+
 .menu { 
-    height: 100vh; /* ocupa a tela inteira */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* para alinhar h1 e botão verticalmente */
-    color: #ffffff; /* cor do texto */
+    flex-direction: column; 
+    color: #ffffff; 
 }
 
-/* Container para organizar o texto e botão */
+
 .container {
     text-align: center;
 }
